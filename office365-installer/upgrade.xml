@@ -1,0 +1,18 @@
+<Configuration ID="52aaa70f-9495-48ff-997a-49306777b022">
+  <Add OfficeClientEdition="64" Channel="Current" MigrateArch="TRUE">
+    <Product ID="O365ProPlusRetail">
+      <Language ID="en-us" />
+      <Language ID="MatchPreviousMSI" />
+      <ExcludeApp ID="Groove" />
+      <ExcludeApp ID="Lync" />
+    </Product>
+  </Add>
+  <Property Name="SharedComputerLicensing" Value="1" />
+  <Property Name="FORCEAPPSHUTDOWN" Value="TRUE" />
+  <Property Name="DeviceBasedLicensing" Value="0" />
+  <Property Name="SCLCacheOverride" Value="1" />
+  <Property Name="SCLCacheOverrideDirectory" Value="%localappdata%\Microsoft\Office\16.0\Licensing" />
+  <Updates Enabled="TRUE" />
+  <RemoveMSI />
+  <Display Level="Full" AcceptEULA="TRUE" />
+</Configuration>

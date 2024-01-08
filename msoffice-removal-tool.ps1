@@ -46,7 +46,7 @@ $SaRA_URL = "https://aka.ms/SaRA_CommandLineVersionFiles"
 $SaRA_ZIP = "$env:TEMP\SaRA.zip"
 $SaRA_DIR = "$env:TEMP\SaRA"
 $SaRA_EXE = "$SaRA_DIR\SaRAcmd.exe"
-$Office365Setup_URL = "https://github.com/digacoretechnology/MS-Office-Removal-Install/blob/main/msoffice-removal-tool.ps1"
+$Office365Setup_URL = "https://raw.githubusercontent.com/digacoretechnology/MS-Office-Removal-Install/main/msoffice-removal-tool.ps1"
 #-----------------------------------------------------------[Functions]------------------------------------------------------------
 Function Invoke-OfficeUninstall {
     if (-Not (Test-Path "$SaRA_DIR")) {

@@ -205,8 +205,8 @@ if (-Not $Force) {
 Invoke-Intro
 # Check if there is a stage to resume
 if (-not ($RunAgain)) {
-    if (Test-Path "HKLM:\Software\OEM\Singleton-Factory-GmbH\M365\Install") {
-        $CurrentStageValue = (Get-ItemProperty "HKLM:\Software\OEM\Singleton-Factory-GmbH\M365\Install").CurrentStage
+    if (Test-Path "HKLM:\Software\OEM\DTC\M365\Install") {
+        $CurrentStageValue = (Get-ItemProperty "HKLM:\Software\OEM\DTC\M365\Install").CurrentStage
         Switch ($CurrentStageValue) {
             1 {
                 Write-Host "Resuming Stage 1: Uninstalling Office ..."

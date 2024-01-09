@@ -171,14 +171,14 @@ Function Invoke-RebootInSeconds($Seconds) {
 }
 
 Function Set-CurrentStage($StageValue) {
-    if (-not (Test-Path "HKLM:\Software\OEM\Singleton-Factory-GmbH\M365\Install")) {
-        New-Item -Path "HKLM:\Software\OEM\Singleton-Factory-GmbH\M365\Install" -Force | Out-Null
+    if (-not (Test-Path "HKLM:\Software\OEM\DTC\M365\Install")) {
+        New-Item -Path "HKLM:\Software\OEM\DTC\M365\Install" -Force | Out-Null
     }
-    New-ItemProperty -Path "HKLM:\Software\OEM\Singleton-Factory-GmbH\M365\Install" -Name "CurrentStage" -Value $StageValue -PropertyType String -Force | Out-Null
+    New-ItemProperty -Path "HKLM:\Software\OEM\DTC\M365\Install" -Name "CurrentStage" -Value $StageValue -PropertyType String -Force | Out-Null
 }
 
-<#Function Invoke-Intro {   
-Write-Host "  __ _             _      _                  ___          _                   "
+Function Invoke-Intro {   }
+<#Write-Host "  __ _             _      _                  ___          _                   "
 Write-Host " / _(_)_ __   __ _| | ___| |_ ___  _ __     / __\_ _  ___| |_ ___  _ __ _   _ "
 Write-Host " \ \| | '_ \ / _' | |/ _ \ __/ _ \| '_ \   / _\/ _' |/ __| __/ _ \| '__| | | |"
 Write-Host " _\ \ | | | | (_| | |  __/ || (_) | | | | / / | (_| | (__| || (_) | |  | |_| |"

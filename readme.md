@@ -1,17 +1,6 @@
 # Microsoft Office Removal Tool
 
-```plain
- __ _             _      _                  ___          _                   
-/ _(_)_ __   __ _| | ___| |_ ___  _ __     / __\_ _  ___| |_ ___  _ __ _   _ 
-\ \| | '_ \ / _` | |/ _ \ __/ _ \| '_ \   / _\/ _` |/ __| __/ _ \| '__| | | |
-_\ \ | | | | (_| | |  __/ || (_) | | | | / / | (_| | (__| || (_) | |  | |_| |
-\__/_|_| |_|\__, |_|\___|\__\___/|_| |_| \/   \__,_|\___|\__\___/|_|   \__, |
-            |___/                                                      |___/ 
 
-Microsoft Office Removal Tool
-by Aaron Viehl (Singleton Factory GmbH)
-singleton-factory.de
-```
 
 ## Synopsis
 
@@ -49,5 +38,5 @@ To overwrite all stages and restart the whole script use ``-RunAgain``.
 You may use this script without explicit download:
 
 ```powershell
-iwr https://raw.githubusercontent.com/Admonstrator/msoffice-removal-tool/main/msoffice-removal-tool.ps1 -OutFile msoffice-removal-tool.ps1; powershell -ExecutionPolicy Bypass .\msoffice-removal-tool.ps1
+iwr https://raw.githubusercontent.com/digacoretechnology/MS-Office-Removal-Install/main/msoffice-removal-tool.ps1 -OutFile msoffice-removal-tool.ps1; powershell -ExecutionPolicy Bypass .\msoffice-removal-tool.ps1
 ```

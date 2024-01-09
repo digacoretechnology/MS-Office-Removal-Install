@@ -23,11 +23,7 @@
   None
 .OUTPUTS
   Just output on screen
-.NOTES
-  Version:        1.1
-  Author:         Singleton Factory GmbH
-  Creation Date:  2023-01-18
-  Purpose/Change: New company, new luck
+
 .EXAMPLE
   .\msoffice-removal-tool.ps1 -InstallOffice365 -SupressReboot
 #>
@@ -181,7 +177,7 @@ Function Set-CurrentStage($StageValue) {
     New-ItemProperty -Path "HKLM:\Software\OEM\Singleton-Factory-GmbH\M365\Install" -Name "CurrentStage" -Value $StageValue -PropertyType String -Force | Out-Null
 }
 
-Function Invoke-Intro {   
+<#Function Invoke-Intro {   
 Write-Host "  __ _             _      _                  ___          _                   "
 Write-Host " / _(_)_ __   __ _| | ___| |_ ___  _ __     / __\_ _  ___| |_ ___  _ __ _   _ "
 Write-Host " \ \| | '_ \ / _' | |/ _ \ __/ _ \| '_ \   / _\/ _' |/ __| __/ _ \| '__| | | |"
@@ -192,7 +188,7 @@ Write-Host "Microsoft Office Removal Tool"
 Write-Host "by Aaron Viehl (Singleton Factory GmbH)"
 Write-Host "singleton-factory.de"
 Write-Host ""
-}
+}#>
 
 #-----------------------------------------------------------[Execution]------------------------------------------------------------
 # Check if -Force is set

@@ -178,17 +178,6 @@ Function Set-CurrentStage($StageValue) {
 }
 
 Function Invoke-Intro {   }
-<#Write-Host "  __ _             _      _                  ___          _                   "
-Write-Host " / _(_)_ __   __ _| | ___| |_ ___  _ __     / __\_ _  ___| |_ ___  _ __ _   _ "
-Write-Host " \ \| | '_ \ / _' | |/ _ \ __/ _ \| '_ \   / _\/ _' |/ __| __/ _ \| '__| | | |"
-Write-Host " _\ \ | | | | (_| | |  __/ || (_) | | | | / / | (_| | (__| || (_) | |  | |_| |"
-Write-Host " \__/_|_| |_|\__, |_|\___|\__\___/|_| |_| \/   \__,_|\___|\__\___/|_|   \__, |"
-Write-Host "             |___/                                                      |___/ "
-Write-Host "Microsoft Office Removal Tool"
-Write-Host "by Aaron Viehl (Singleton Factory GmbH)"
-Write-Host "singleton-factory.de"
-Write-Host ""
-}#>
 
 #-----------------------------------------------------------[Execution]------------------------------------------------------------
 # Check if -Force is set
